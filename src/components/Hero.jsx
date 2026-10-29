@@ -8,6 +8,7 @@ export default function Hero() {
         <h1>Trusted medicines, close to home in Birnin Kebbi.</h1>
         <p>Everyday medicines and friendly pharmacist advice, right here in your community.</p>
         <div className="hero-actions">
+          <a className="btn hero-order" href="#order">Order now</a>
           <a className="btn hero-call" href={`tel:${config.phoneLink}`}>Call {config.phone}</a>
           <a className="btn hero-outline" href="#medicines">Browse medicines</a>
         </div>
