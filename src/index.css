@@ -194,43 +194,14 @@ h4 {
   gap: 10px;
 }
 
-.hero-illustration {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  width: min(100%, 340px);
-  min-height: 140px;
+.hero-photo {
+  display: block;
+  width: min(100%, 400px);
+  height: 240px;
   margin-top: 24px;
-  padding: 14px 18px;
   border-radius: 12px;
-  background: #ffffff;
-}
-
-.hero-product {
-  display: grid;
-  flex: 1;
-  place-items: center;
-}
-
-.hero-product svg {
-  width: 78px;
-  height: 62px;
-  filter: drop-shadow(0 5px 5px rgba(15, 60, 45, 0.18));
-}
-
-.hero-product.is-floating {
-  animation: hero-float 2.8s ease-in-out infinite;
-}
-
-@keyframes hero-float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-7px);
-  }
+  object-fit: cover;
+  box-shadow: 0 10px 24px rgba(15, 60, 45, 0.18);
 }
 
 .hero .hero-call {
@@ -411,6 +382,15 @@ h4 {
   border-radius: 10px;
   background: var(--page);
   overflow: hidden;
+}
+
+.pic img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+  transition: transform 180ms ease;
 }
 
 .pic svg {
@@ -738,7 +718,7 @@ h4 {
   }
 
   .hero {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 24px;
     padding: 38px 22px;
   }
@@ -797,6 +777,11 @@ h4 {
     background: linear-gradient(135deg, #0b5d49, #084938);
     color: #ffffff;
   }
+}
+
+.medicine-card:hover .pic img,
+.medicine-card:focus-within .pic img {
+  transform: scale(1.05);
 }
 
 .medicine-card:hover .pic svg,

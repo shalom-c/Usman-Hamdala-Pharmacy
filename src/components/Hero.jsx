@@ -1,5 +1,4 @@
 import { config } from "../data/config";
-import MedicineIcon from "./MedicineIcon";
 
 export default function Hero() {
   return (
@@ -12,11 +11,13 @@ export default function Hero() {
           <a className="btn hero-call" href={`tel:${config.phoneLink}`}>Call {config.phone}</a>
           <a className="btn hero-outline" href="#medicines">Browse medicines</a>
         </div>
-        <div className="hero-illustration" role="img" aria-label="Illustrations of a medicine capsule, bottle and tablet">
-          <span className="hero-product"><MedicineIcon kind="capsule" color="#dc6c68" /></span>
-          <span className="hero-product is-floating"><MedicineIcon kind="bottle" color="#ec9a48" /></span>
-          <span className="hero-product"><MedicineIcon kind="tablet" color="#7bc6a5" /></span>
-        </div>
+        <img
+          className="hero-photo"
+          src="/images/hero.jpg"
+          alt="Pharmacy medicines ready to help the local community"
+          width="800"
+          height="500"
+        />
       </div>
       <aside className="hero-facts" aria-label="Pharmacy details">
         <div className="hero-fact">
