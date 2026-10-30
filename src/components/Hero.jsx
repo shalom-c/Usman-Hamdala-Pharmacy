@@ -13,10 +13,10 @@ export default function Hero() {
         </div>
         <img
           className="hero-photo"
-          src="/images/hero.jpg"
-          alt="Pharmacy medicines ready to help the local community"
-          width="800"
-          height="500"
+          src="/images/pharmacy-interior.png"
+          alt="Shelves stocked with medicines at a local pharmacy"
+          width="1365"
+          height="768"
         />
       </div>
       <aside className="hero-facts" aria-label="Pharmacy details">
